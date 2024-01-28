@@ -1,0 +1,225 @@
+@import url("Times New Roman, Times, serif");
+
+/*responsive*/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.dropdown1 {
+    color: white;
+    background-color: rgb(128, 99, 69);
+    font-weight: bold;
+    margin-right: 45px;
+    height: 100%;
+    width: 10%;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+.timeline {
+    color: rgb(7, 7, 7);
+    margin-right: 2%;
+    font-weight: bold;
+    height: 100%;
+    width: 15%;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 10%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Adjust the background color as needed */
+    width: 100px;
+    border: solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black; /* Adjust the text color as needed */
+    font-family: 'Oswald', sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Adjust the background color on hover as needed */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.topnav a:hover {
+    background-color: burlywood;
+}
+
+.main {
+    margin-top: 12%;
+    margin-right: 30%;
+    font-size: 48px;
+    margin-left: 30%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+}
+
+.click{
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
+    background-color: rgb(128, 99, 69);
+}
+
+.content {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    opacity: 100%;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 200px;
+  }
+
+.content p{
+    color: white;
+    font-size: 35px;
+    margin: 45px;
+    margin-left: 10px;
+}
+.content h1{
+    color: white;
+    font-size: 70px;
+}
+#vid1{
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+
+banner{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background: #f1f1f1;
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: black;
+}
+
+header .navbar li{
+    position: relative;
+    float: right;
+}
+header .navbar li a{
+    font-size: 23px;
+    padding: 20px;
+    color: black;
+    display: flex;
+    transition-duration: 630ms;  
+}
+header .navbar li a:hover{
+    background: white;
+    color: black;
+    transition-duration: 630ms;  
+}
+#menu-bar{
+    display: none;
+    
+}
+header label{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.click{
+    display: inline-block;
+    padding: 15px 20px;
+  background-color: rgb(128, 99, 69);
+    background-size: cover;
+    text-decoration: none;
+    margin-top: 50px;
+   text-align: center;
+   color: black;
+   border: solid 5px white;
+   transition-duration: 630ms;   
+}
+
+.click:hover{
+    background-color: black;  
+    transition-duration: 6300ms;   
+    transform: scale(1.5);
+    color: black;   
+}
+
+@media(max-width:450px){
+    header{
+        padding: 10px;   
+    }
+
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: white;
+        border-top: 1px solid black;
+        display: none;
+    }
+
+    header .navbar li{
+        width: 100%;
+        
+    }
+
+    #menu-bar:checked .navbar{
+        display: initial;
+    }
+}
+.footer{
+    width: 100%;
+    height: 60px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
